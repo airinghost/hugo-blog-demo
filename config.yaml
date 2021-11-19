@@ -5,18 +5,18 @@
 ## Your posts files should be in /content/posts/ folder. See the [params.mainSections] section below.
 
 
-baseURL: https://example.com/
+baseURL: https://icarus-lite.zhangjet.com/
 
 ## This would show at <head> section in html files
 languageCode: zh-CN   
 
 theme: hugo-theme-icarus-lite
 
-title: exampleTitle
+title: Icarus-Lite
 
 hasCJKLanguage: true
 summaryLength: 1000
-paginate: 10
+paginate: 6
 
 permalinks:
   posts: /:year/:title/
@@ -29,7 +29,7 @@ params:
     dateFormat: "Jan 2, 2006"
 
     footerCopyright: 
-        siteUrl: Your Domain / Name  ## This would show after footer text "© 202X"
+        siteUrl: ZhangJet  ## This would show after footer text "© 202X"
 
     navbarLogo: 
         enabled: true
@@ -43,8 +43,8 @@ params:
 
     ## Buttons Text
     PageBack: "Back to Prev"
-    OlderPosts: "Older Page"
-    NewerPosts: "Newer Page"
+    OlderPosts: "OLDER"
+    NewerPosts: "NEWER"
     read_more: "Read More"
 
     ## for websites hosted on mainland China servers. Just DELETE this whole part if no need
@@ -67,8 +67,8 @@ menu:
     weight: 2
   ## Try to ollow these rules to add menus as you like  
   - identifier: "me"
-    name: "ABOUT"
-    url: /about/
+    name: "404"
+    url: /404/
     weight: 3
 
 markup:

@@ -2,9 +2,9 @@
 draft: false
 hidden: false
 title: "爱莲说"
-date: 2020-12-21
+date: 2021-10-01
 date_hidden: true
-read_more: true
+read_more: false
 read_more_txt: 
 link_go: 
 link_txt: 

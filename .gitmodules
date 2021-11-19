@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-icarus-lite"]
+	path = themes/hugo-theme-icarus-lite
+	url = https://github.com/airinghost/hugo-theme-icarus-lite.git

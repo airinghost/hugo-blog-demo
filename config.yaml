@@ -29,7 +29,7 @@ params:
     dateFormat: "Jan 2, 2006"
 
     footerCopyright: 
-        siteUrl: ZhangJet  ## This would show after footer text "© 202X"
+        siteUrl: ZhangJet.com  ## This would show after footer text "© 202X"
 
     navbarLogo: 
         enabled: true

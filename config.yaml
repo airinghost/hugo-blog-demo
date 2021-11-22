@@ -22,6 +22,15 @@ permalinks:
   posts: /:year/:title/
   pages: /:section/:filename/
 
+disableKinds:
+  - "RSS"
+  - "sitemap"
+  - "taxonomy"
+  - "term"
+
+taxonomies:
+  - category: "categories"
+  - tag: "tags"
 
 ## Custom Params
 params:

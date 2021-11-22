@@ -5,7 +5,7 @@
 ## Your posts files should be in /content/posts/ folder. See the [params.mainSections] section below.
 
 
-baseURL: https://icarus-lite.zhangjet.com/
+baseURL: https://hugo-theme-icarus-lite.netlify.app/
 
 ## This would show at <head> section in html files
 languageCode: zh-CN   

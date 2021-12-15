@@ -19,7 +19,7 @@ summaryLength: 1000
 paginate: 6
 
 permalinks:
-  posts: /:year/:title/
+  posts: /:section/:filename/
   pages: /:section/:filename/
 
 disableKinds:
@@ -34,30 +34,36 @@ taxonomies:
 
 ## Custom Params
 params:
+    description:      ## Site description
 
     dateFormat: "Jan 2, 2006"
 
-    footerCopyright: 
-        siteUrl: ZhangJet.com  ## This would show after footer text "© 202X"
+    externalStyle: false  ## Set false to use internal style; true to external CSS file.
+    externalStyleVersion: 20060102  ## If you need to refresh the CSS file for browsers, then change this number.
+    
+    mainSections: posts  ## This means that you need to put posts .md files in the folder /content/posts/ , then these files can be viewed at Homepage.
+
+    navbarSticky: true  ## Set to true to make navbar menu sticky
 
     navbarLogo: 
         enabled: true
         imgEnabled: false
-        imgPath: "/favicon.png"  ## at /static folder
+        imgPath: "/logo.svg"  ## at /static folder
         imgWidth: "24px"
         imgHeight: "24px"
         svgEnabled: true  ## Put your SVG code in /layout/partials/custom-logo.html if enabled
-    
-    mainSections: posts  ## This means that you need to put posts .md files in the folder /content/posts/ , then these files can be viewed at Homepage.
-
+        
     ## Buttons Text
     PageBack: "Back to Prev"
-    OlderPosts: "OLDER"
-    NewerPosts: "NEWER"
+    OlderPosts: "Older"
+    NewerPosts: "Newer"
     read_more: "Read More"
 
-    ## for websites hosted on mainland China servers. Just DELETE this whole part if no need
-    ## 下面这部分是页脚的备案信息。如果不需要，直接删掉或用 # 注释掉该部分即可
+    footerCopyright: 
+        siteUrl: Your Domain / Name  ## This would show after footer text "© 202X"
+
+    ## for websites hosted on mainland China servers.
+    ## 下面这部分是页脚的备案信息
     ICP: 
         enabled: false
         province: 京
@@ -68,7 +74,7 @@ menu:
   home:
   - identifier: "posts"  ## This identifier value needs to be equal to the [params.mainSections] above
     name: "HOME"  ## The NAME will show as menu text
-    title: Home
+    title: Home  ## The TITLE will show on the Browser
     url: /
     weight: 1
   main:

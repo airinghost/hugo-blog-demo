@@ -103,7 +103,7 @@ markup:
       attribute:
         block: false
         title: true
-      autoHeadingID: false  ## Set to false if you customized the headings' IDs
+      autoHeadingID: false  ## Set to false if you neet to customize the headings' IDs
       autoHeadingIDType: github
     renderer:
       hardWraps: false

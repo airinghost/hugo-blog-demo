@@ -17,30 +17,69 @@
 */
 
 @font-face {
-  font-family: Condensed;
-  src:  local(Avenir Next Condensed Medium),
-        local(Avenir Next Medium Condensed),
-        local(AvenirNextCondensed-Medium),
-        local(Avenir Medium),
-        local(Avenir-Medium),
-        local(Roboto Condensed),
-        local(Roboto Condensed Regular),
-        local(RobotoCondensed),
-        local(RobotoCondensed-Regular),
-        local(sans-serif-condensed);
+  font-family: Latin Condensed;
+  src: local(Avenir Next Condensed Medium),
+       local(AvenirNextCondensed-Medium),
+       local(Avenir Medium),
+       local(Avenir-Medium),
+       local(Roboto Condensed),
+       local(RobotoCondensed-Regular),
+       local(sans-serif-condensed),
+       local(Barlow Semi Condensed);
   unicode-range: U+0030-U+0039, U+0041-U+005A, U+0061-U+007A;
 }
 
-html {
-  font-size: 14px;
+@font-face {
+  font-family: Quotation Marks;
+  src: local(American Typewriter),
+       local(Arial),
+       local(Arial Rounded MT Bold),
+       local(Times New Roman),
+       local(Times),
+       local(Times Roman);
+  unicode-range: U+0022, U+0027, U+0060, U+00B4, U+2018, U+2019, U+201C, U+201D;
+}
+
+@font-face {
+  font-family: Dashes;
+  src: local(Arial),
+       local(Arial Rounded MT Bold),
+       local(Times New Roman),
+       local(Times),
+       local(Times Roman),
+       local(SimHei),
+       local(SimSun);
+  unicode-range: U+002D, U+2014;
+}
+
+@font-face {
+  font-family: Commercial At;
+  src: local(Verdana),
+       local(Droid Sans),
+       local(Helvetica),
+       local(Helvetica Neue);
+  unicode-range: U+0040;
 }
 
 .container {
-  font-family: LXGW WenKai Screen, Clear Han Serif, LXGW WenKai, Source Han Serif CN for Display, Swei B2 Sugar CJK SC, Swei Sugar CJK SC, Helvetica Neue, Helvetica, PingFang SC, Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, Microsoft YaHei, Baskerville SemiBold, Book Antiqua, Optima, Palatino, Droid Serif, sans-serif, serif;
+  font-family: LXGW WenKai Screen, Quotation Marks, Dashes, Commercial At, Clear Han Serif, LXGW WenKai, Swei B2 Sugar CJK SC, Swei Sugar CJK SC, Palatino, Palatino Linotype, Optima, Book Antiqua, Baskerville SemiBold, sans-serif-condensed, Droid Serif, Helvetica, Helvetica Neue, PingFang SC, Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, Microsoft YaHei, sans-serif, serif;
 }
 
 nav .container, footer .container {
-  font-family: Condensed, sans-serif-condensed, LXGW WenKai Screen, Clear Han Serif, LXGW WenKai, Source Han Serif CN for Display, Swei B2 Sugar CJK SC,Swei Sugar CJK SC, PingFang SC, Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, Microsoft YaHei, sans-serif, serif;
+  font-family: LXGW WenKai Screen, Quotation Marks, Latin Condensed, PingFang SC, Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, Microsoft YaHei, sans-serif, serif;
+}
+
+p {
+  hanging-punctuation: allow-end;
+}
+
+hr + h2 {
+    margin-top: 0;
+    margin-bottom: 0.375em;
+}
+
+blockquote small {
+  text-transform: uppercase;
 }
 
 </style>

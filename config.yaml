@@ -60,7 +60,7 @@ params:
     read_more: "Read More"
 
     footerCopyright: 
-        siteUrl: Your Domain / Name  ## This would show after footer text "© 202X"
+        siteUrl: "Zhangjet.com"  ## This would show after footer text "© 202X"
 
     ## for websites hosted on mainland China servers.
     ## 下面这部分是页脚的备案信息
@@ -90,15 +90,31 @@ menu:
     weight: 3
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true  ## Set to true if you have HTML content inside Markdown
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: false  ## Set to false if you customized the headings' IDs
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true  ## Set to true if you have HTML content inside Markdown
+      xhtml: false
 
 ## Decrease the size of .html and .css files
 minify:
   disableCSS: false
   disableHTML: false
-  disableJS: false
+  disableJS: true
   disableJSON: false
   disableSVG: false
   disableXML: false

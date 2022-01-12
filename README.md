@@ -1,3 +1,2 @@
-## Demo Site Status
 
-[![Netlify Status](https://hugo-theme-icarus-lite.netlify.app/images/netlify.success.svg)](https://hugo-theme-icarus-lite.netlify.app/)
+Demo Site for [Hugo Theme Icarus-Lite](https://github.com/airinghost/hugo-theme-icarus-lite)

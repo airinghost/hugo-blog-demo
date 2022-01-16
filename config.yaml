@@ -71,7 +71,7 @@ params:
     pagesReadMore: false  ## Set true to always show Read More button for Pages
 
     footerCopyright: 
-        siteUrl: "Zhangjet.com"  ## This would show after footer text "© 202X"
+        siteUrl: "ZhangJet.com"  ## This would show after footer text "© 202X"
 
     ## for websites hosted on mainland China servers.
     ## 下面这部分是页脚的备案信息

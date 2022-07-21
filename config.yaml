@@ -45,7 +45,8 @@ params:
     
     mainSections: posts  ## This means that you need to put posts .md files in the folder /content/posts/ , then these files can be viewed at Homepage.
 
-    navbarSticky: true  ## Set to true to make navbar menu sticky
+    navbarSticky: true  ## Set to true to make navbar menu fixed (on the top of the page)
+    navbarStickyNew: true  ## Set to true to make navbar menu sticky
 
     navbarLogo: 
         enabled: true
